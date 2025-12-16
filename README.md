@@ -1,5 +1,4 @@
-[# retail-sales-analytics]
-(Title: Retail Sales Analytics
+Title: Retail Sales Analytics
 
 Problem Statement:
 Businesses generate raw transactional sales data every day, but this data is often messy, inconsistent, and not immediately usable for analytics.
@@ -17,5 +16,3 @@ Daily/ Monthly revenue
 Orders
 Average order value
 Unique customers
-
-)
