@@ -8,11 +8,18 @@ The final output supports insights such as daily revenue trends, top-selling pro
 Data:
 Retail sales data with orders, customers, products, dates, prices/quantities
 
+The raw and processed data files are not tracked in Git.
+
+To reproduce the datasets:
+1. Download the Olist Brazilian E-Commerce dataset from Kaggle  
+2. Place the CSV files under `data/raw/`  
+3. Run the processing scripts in the `scripts/` directory  
+
 Pipeline Architecture:
-Raw CSV files -> Ingestion -> Validation -> Cleaning -> Transformation ->Curated tables -> SQL analytics -> Dashboard
+Raw CSV files -> Ingestion -> Validation -> Cleaning -> Transformation ->Curated tables -> SQL analytics -> Dashboard  
 
 KPIs:
-Daily/ Monthly revenue
-Orders
-Average order value
-Unique customers
+Daily/ Monthly revenue  
+Orders  
+Average order value  
+Unique customers  
