@@ -16,4 +16,4 @@ data.used_voucher = data.payment_type.apply(lambda x: 'voucher' in x if isinstan
 
 data.product_volume_cm3 = data.product_length_cm * data.product_height_cm * data.product_width_cm
 
-data.to_csv('data/transformed/transformed.csv', index=False)
+data.to_csv('data/transformed/final.csv', index=False)
