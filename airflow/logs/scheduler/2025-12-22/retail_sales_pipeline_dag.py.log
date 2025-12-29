@@ -494,3 +494,108 @@ IndentationError: unexpected indent
 [2025-12-22T13:39:23.721+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:39:23.721+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-12-22T13:39:23.735+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:39:23.734+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
 [2025-12-22T13:39:23.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.084 seconds
+[2025-12-22T13:39:54.229+0000] {processor.py:161} INFO - Started process (PID=374) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:39:54.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:39:54.236+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:39:54.236+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:39:54.261+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:39:54.320+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:39:54.320+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:39:54.331+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:39:54.331+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:39:54.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.124 seconds
+[2025-12-22T13:40:24.922+0000] {processor.py:161} INFO - Started process (PID=379) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:40:24.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:40:24.926+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:40:24.926+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:40:24.945+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:40:24.991+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:40:24.991+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:40:25.006+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:40:25.006+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:40:25.016+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.108 seconds
+[2025-12-22T13:40:55.267+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:40:55.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:40:55.270+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:40:55.269+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:40:55.291+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:40:55.318+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:40:55.318+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:40:55.335+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:40:55.335+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:40:55.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.083 seconds
+[2025-12-22T13:41:25.725+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:41:25.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:41:25.728+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:41:25.728+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:41:25.743+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:41:25.779+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:41:25.779+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:41:25.787+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:41:25.787+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:41:25.796+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.081 seconds
+[2025-12-22T13:41:56.159+0000] {processor.py:161} INFO - Started process (PID=394) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:41:56.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:41:56.163+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:41:56.162+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:41:56.180+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:41:56.228+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:41:56.228+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:41:56.244+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:41:56.244+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:41:56.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.106 seconds
+[2025-12-22T13:42:26.588+0000] {processor.py:161} INFO - Started process (PID=399) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:42:26.591+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:42:26.593+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:42:26.592+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:42:26.606+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:42:26.635+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:42:26.635+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:42:26.648+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:42:26.648+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:42:26.658+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.078 seconds
+[2025-12-22T13:42:57.080+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:42:57.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:42:57.085+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:42:57.084+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:42:57.099+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:42:57.125+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:42:57.125+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:42:57.133+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:42:57.133+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:42:57.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.072 seconds
+[2025-12-22T13:43:27.418+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:43:27.419+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:43:27.421+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:43:27.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:43:27.435+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:43:27.462+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:43:27.461+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:43:27.469+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:43:27.469+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:43:27.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.065 seconds
+[2025-12-22T13:43:57.739+0000] {processor.py:161} INFO - Started process (PID=414) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:43:57.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:43:57.742+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:43:57.741+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:43:57.757+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:43:57.783+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:43:57.783+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:43:57.790+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:43:57.790+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:43:57.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.069 seconds
+[2025-12-22T13:44:28.035+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:44:28.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:44:28.037+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:44:28.037+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:44:28.046+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:44:28.069+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:44:28.069+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:44:28.076+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:44:28.076+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:44:28.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.057 seconds
+[2025-12-22T13:44:58.347+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:44:58.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:44:58.351+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:44:58.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:44:58.362+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:44:58.385+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:44:58.385+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:44:58.391+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:44:58.391+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:44:58.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.057 seconds
+[2025-12-22T13:45:28.709+0000] {processor.py:161} INFO - Started process (PID=429) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:45:28.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:45:28.712+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:45:28.711+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:45:28.722+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:45:28.748+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:45:28.748+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:45:28.756+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:45:28.756+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:45:28.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.063 seconds
+[2025-12-22T13:45:59.197+0000] {processor.py:161} INFO - Started process (PID=434) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:45:59.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:45:59.200+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:45:59.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:45:59.211+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:45:59.234+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:45:59.234+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:45:59.246+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:45:59.246+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:45:59.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.064 seconds
+[2025-12-22T13:46:29.721+0000] {processor.py:161} INFO - Started process (PID=439) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:46:29.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:46:29.724+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:46:29.724+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:46:29.741+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:46:29.769+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:46:29.769+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:46:29.782+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:46:29.782+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:46:29.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.081 seconds
+[2025-12-22T13:47:00.294+0000] {processor.py:161} INFO - Started process (PID=444) to work on /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:47:00.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retail_sales_pipeline_dag.py for tasks to queue
+[2025-12-22T13:47:00.297+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:47:00.297+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:47:00.319+0000] {processor.py:840} INFO - DAG(s) 'retail_sales_pipeline' retrieved from /opt/airflow/dags/retail_sales_pipeline_dag.py
+[2025-12-22T13:47:00.353+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:47:00.353+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-22T13:47:00.363+0000] {logging_mixin.py:188} INFO - [2025-12-22T13:47:00.363+0000] {dag.py:3954} INFO - Setting next_dagrun for retail_sales_pipeline to None, run_after=None
+[2025-12-22T13:47:00.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retail_sales_pipeline_dag.py took 0.089 seconds
