@@ -1,0 +1,4 @@
+delivery_bucket,orders,avg_item_value
+0-3 days,8602,109.95
+4-7 days,25094,126.51
+8+ days,62774,149.5

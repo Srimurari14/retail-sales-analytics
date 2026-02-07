@@ -1,35 +1,31 @@
-# Retail Sales Analytics – Data Engineering Pipeline
+# Retail Sales Analytics – Data Engineering & Analytics
 
 ## Overview
 
-This project implements an end-to-end data engineering pipeline using real e-commerce transactional data.
-The pipeline ingests raw CSV files, performs joins, validation, cleaning, and transformations, and produces a curated dataset for analytics.
+This project demonstrates an **end-to-end data engineering pipeline extended into full business analytics and visualization**.
 
-The pipeline is:
+Raw e-commerce data is ingested, cleaned, validated, and transformed using production-style data engineering practices. The curated dataset is then analyzed using SQL and visualized through an executive-style Tableau dashboard to answer real business questions around **revenue, operations, and customer behavior**.
 
-* Modular and reproducible
-* Executed using Docker
-* Orchestrated using Apache Airflow
-
-The goal of this project is to demonstrate production-style data engineering practices, not just data analysis.
+The project intentionally covers **both Data Engineering (DE) and Data Analytics (DA)** responsibilities, mirroring real-world analytics workflows.
 
 ---
 
 ## Dataset
 
 **Source:** Brazilian E-Commerce Public Dataset by Olist (Kaggle)
-Link: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+[https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 **Description:**
-The dataset contains approximately 100,000 orders placed between 2016 and 2018. It includes information about:
+
+~100,000 real e-commerce orders (2016–2018), including:
 
 * Orders and order items
 * Customers and sellers
-* Payments
+* Payments and vouchers
 * Products and categories
-* Geographic details
+* Geographic information
 
-The data is anonymized and represents real commercial transactions.
+The data is anonymized and reflects real commercial operations.
 
 ---
 
@@ -40,41 +36,40 @@ The data is anonymized and represents real commercial transactions.
 ```
 Raw CSV files
    ↓
-Processing and joins
+Processing & joins
    ↓
-Data cleaning and validation
+Data cleaning & validation
    ↓
-Feature transformations
+Feature engineering
    ↓
-Curated dataset (final.csv)
+Curated analytics dataset (final.csv)
+   ↓
+SQL analysis & Tableau dashboard
 ```
 
 ### Execution model
 
 * Python scripts implement pipeline logic
-* Docker packages and runs the pipeline
-* Apache Airflow schedules and orchestrates Docker runs
+* Docker ensures reproducible execution
+* Apache Airflow orchestrates pipeline runs
+* Tableau Public consumes the curated dataset for analytics
 
 ---
 
-## Tools and Technologies
+## Tools & Technologies
 
-### Data Processing
+### Data Engineering
 
 * Python 3.11
-* Pandas
-* NumPy
-
-### Containerization
-
-* Docker
-* Docker volumes for data persistence
-
-### Orchestration
-
+* Pandas, NumPy
+* Docker & Docker Compose
 * Apache Airflow 2.9
-* Docker Compose
-* PostgreSQL (Airflow metadata database)
+* PostgreSQL (Airflow metadata)
+
+### Data Analytics
+
+* SQL (DuckDB-style analytical queries)
+* Tableau Public (Dashboarding & visualization)
 
 ---
 
@@ -86,9 +81,9 @@ retail-sales-analytics/
 │   ├── raw/            # Original CSV files
 │   ├── processed/      # Joined intermediate datasets
 │   ├── cleaned/        # Cleaned datasets
-│   └── transformed/    # Final curated output
+│   └── transformed/    # Final curated analytics dataset
 │
-├── scripts/
+├── scripts/            # Data engineering pipeline
 │   ├── orders_with_items.py
 │   ├── ord_itm_cust.py
 │   ├── ord_pay.py
@@ -98,11 +93,20 @@ retail-sales-analytics/
 │   ├── transform.py
 │   └── run_pipeline.py
 │
+├── analytics/           # SQL analytics layer
+│   ├── revenue_analysis.sql
+│   ├── delivery_performance.sql
+│   ├── voucher_behavior.sql
+│   └── run_sql.py
+│
 ├── airflow/
 │   ├── dags/
 │   │   └── retail_sales_pipeline_dag.py
 │   ├── logs/
 │   └── docker-compose.yml
+│
+├── dashboards/
+│   └── tableau_dashboard.png
 │
 ├── Dockerfile
 ├── requirements.txt
@@ -116,15 +120,15 @@ retail-sales-analytics/
 ### 1. Ingestion
 
 * Reads raw CSV files from `data/raw`
-* No filtering or assumptions applied at this stage
+* No assumptions or filtering applied
 
 ### 2. Processing
 
 * Orders joined with items, customers, payments, products, and sellers
-* One-to-many relationships preserved at order-item level
-* Intermediate datasets written to `data/processed`
+* One-to-many relationships preserved at item level
+* Intermediate outputs written to `data/processed`
 
-### 3. Cleaning
+### 3. Cleaning & Validation
 
 * Datetime normalization
 * City name standardization (case, accents, spacing)
@@ -135,102 +139,112 @@ retail-sales-analytics/
   * `has_prod_dim`
   * `has_pay_info`
 
-### 4. Transformation
+### 4. Feature Engineering
 
 * Item-level total value calculation
-* Delivery duration calculation
-* Payment method feature extraction
+* Delivery duration (`delivery_days`)
+* Voucher usage extraction
 * Product volume calculation
-* Monetary values rounded for consistency
+* Monetary rounding for consistency
 
 ### 5. Output
 
-* Final curated dataset written to:
+Final analytics-ready dataset:
 
-  ```
-  data/transformed/final.csv
-  ```
-
----
-
-## Data Quality Notes
-
-* Some delivered orders do not have delivery dates
-* A small number of orders have no payment records
-* Product dimension data is missing for a subset of products
-* No rows are dropped silently
-* Missing information is explicitly flagged
-
-This approach ensures transparency and avoids data loss.
+```
+data/transformed/final.csv
+```
 
 ---
 
-## Running the Pipeline with Docker
+## Data Quality Principles
 
-### Build the Docker image
+* No rows dropped silently
+* No imputation of missing values
+* All real-world data gaps preserved
+* Explicit boolean flags used instead of assumptions
 
-Run from the project root:
+This ensures analytical transparency and prevents misleading metrics.
+
+---
+
+## Analytics Layer (SQL)
+
+The curated dataset is analyzed using SQL to answer key business questions:
+
+* Revenue and order volume trends
+* Category-level revenue contribution
+* Delivery performance by state
+* Voucher usage impact on average order value
+
+All SQL queries respect correct aggregation levels to avoid overcounting.
+
+---
+
+## Tableau Dashboard
+
+### Dashboard Title
+
+**E-Commerce Sales & Delivery Performance Dashboard**
+
+### Key Insights
+
+* **Revenue & Orders:** $15.8M revenue across ~99K orders
+* **Category Performance:** A small number of categories drive a majority of revenue
+* **Delivery Operations:** No state meets the 7-day delivery SLA on average
+* **Customer Behavior:** Orders using vouchers show lower average order value
+
+### Dashboard Features
+
+* Executive KPI summary (Revenue, Orders, AOV)
+* Revenue by product category
+* Average delivery days by state with SLA reference line
+* Orders and AOV trends over time
+* Voucher impact on customer spending
+
+📊 **Dashboard Screenshot:**
+
+![Tableau Dashboard](dashboards/tableau_dashboard.png)
+
+🔗 **Tableau Public Link:** *(https://public.tableau.com/app/profile/sri.murari.dachepalli/viz/E-CommerceSalesDeliveryPerformanceDashboard/Dashboard1)*
+
+---
+
+## Running the Pipeline
+
+### Using Docker
 
 ```bash
 docker build -t retail-sales-pipeline .
-```
 
-### Execute the pipeline
-
-```bash
 docker run --rm \
   -v $(pwd)/data:/app/data \
   retail-sales-pipeline
 ```
 
-This runs the full pipeline and generates `final.csv`.
-
 ---
 
-## Running the Pipeline with Airflow
-
-### Start Airflow
+## Orchestration with Airflow
 
 ```bash
 cd airflow
 docker compose up -d
 ```
 
-Access the Airflow UI:
+Access UI at:
 
 ```
 http://localhost:8080
 ```
 
-### Trigger the pipeline
-
-* Enable the `retail_sales_pipeline` DAG
-* Trigger it manually from the UI
-* Monitor logs from the task view
-
-The DAG runs the Dockerized pipeline end-to-end.
-
----
-
-## Why Airflow Is Used
-
-Docker is used to package and execute the pipeline logic.
-Apache Airflow is used to:
-
-* Schedule recurring runs
-* Track execution history
-* Handle retries and failures
-* Orchestrate pipeline execution over time
-
-Docker handles execution.
-Airflow handles operations.
+Trigger `retail_sales_pipeline` DAG to execute the pipeline end-to-end.
 
 ---
 
 ## Key Takeaways
 
-* Built a modular data pipeline with clear stage separation
-* Handled real-world data quality issues explicitly
-* Packaged execution using Docker for reproducibility
-* Orchestrated pipeline runs using Apache Airflow
-* Followed production-aligned data engineering practices
+* Built a modular, reproducible data pipeline
+* Preserved real-world data imperfections transparently
+* Created an analytics-ready dataset for SQL and BI
+* Designed a business-focused Tableau dashboard
+* Demonstrated both DE and DA skill sets in one project
